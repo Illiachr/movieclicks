@@ -1,0 +1,127 @@
+.header {
+  margin-top: 2.25rem;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 426px) {
+  .header__top {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.logo__title {
+  color: #000000;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo__subtitle {
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+.header__menu {
+}
+
+.header__menu--btn {
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.25rem;
+}
+
+@media (max-width: 426px) {
+  .header__menu--btn {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.burger__menu--icon {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
+  border-radius: 2rem;
+}
+
+.burger__menu--icon:before,
+.burger__menu--icon:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  background-color: #000000;
+  left: 0;
+  border-radius: 2rem;
+}
+
+.burger__menu--icon:before {
+  top: -0.625rem;
+}
+
+.burger__menu--icon:after {
+  bottom: -0.625rem;
+}
+
+.header__login {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (max-width: 426px) {
+  .header__login {
+    display: none;
+  }
+}
+
+.search__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--accent-bg-color);
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  gap: 0.25rem;
+}
+
+.search__bar--input {
+  flex-grow: 1;
+  width: 100%;
+  padding: 0.875rem 1rem;
+  background: var(--bg-color);
+  border-radius: 0.125rem;
+  border: none;
+  outline: transparent;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+.search__bar--input::placeholder {
+  color: var(--color-secondary);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (max-width: 426px) {
+  .search__bar--btn {
+    padding: 1rem 0.625rem;
+  }
+  .search__bar--btn span {
+    display: none;
+  }
+}
